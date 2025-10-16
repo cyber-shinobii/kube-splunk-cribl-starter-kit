@@ -1,0 +1,113 @@
+# ============================================================
+# Terraform Ignore Rules
+# ============================================================
+
+# Local .terraform directories and plugin binaries
+**/.terraform/*
+*.terraform
+*.terraform.*
+*/.terraform
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+**/.terraform.lock.hcl
+terraform/.terraform.lock.hcl
+
+# Terraform lock files (can be regenerated per environment)
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+terraform.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Local overrides and test plans
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*tfplan*
+*.tf_output.json
+*.inventory.txt
+
+# Ignore Terraform backend configuration if used locally
+backend.tf
+
+# ============================================================
+# General Environment and Python
+# ============================================================
+
+# Python cache and virtualenvs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# Local environment files
+.env
+.env.*
+.envrc
+
+# Logs
+*.log
+*.out
+*.err
+
+# ============================================================
+# Kubernetes, Helm, and Docker
+# ============================================================
+
+# Helm release and cache directories
+.chart/
+charts/
+tmp/
+values.local.yaml
+
+# Kubernetes manifests generated on the fly
+*.kubeconfig
+*.yaml.tmp
+*.yml.tmp
+
+# Docker build artifacts
+**/Dockerfile.local
+**/build/
+**/.dockerignore
+
+# ============================================================
+# OS and Editor Files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============================================================
+# Custom: Splunk & Observability artifacts
+# ============================================================
+
+# Splunk saved searches, lookups, or temporary exports
+*.csv
+*.bak
+*.splunkbackup
+
+# Local metrics, traces, or logs generated during testing
+*.metrics.json
+*.traces.json
+*.otel.log
